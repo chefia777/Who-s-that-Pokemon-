@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca Pokemon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Quem é esse <strong>Pokemón</strong> ?</h1>
+        <hr>
+        <div class="imagem" id="imginicial">
+
+        </div>
+        <form @submit.prevent="search">
+            <div class="group-form">
+                <label>Nome ou Número do Pokémon:</label>
+                <input type="text" id="name" placeholder="Exemplo: Pikachu ou 25" required>
+            </div>
+            <div class="group-form">
+                <input id="botaozinho" type="button" value="Pesquisar">
+            </div>
+            <div class="esconder">
+                <input class="esconder" id="botaozinho-novo" type="button" value="Jogar novamente!">
+            </div>
+        </form>
+        <div id="imgPokemon">
+        </div>
+        <div class="conteudo" id="content">...</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
